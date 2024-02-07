@@ -5,32 +5,23 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
-    },
-    {
-      action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
-    },
-    {
-      label: 'Redirect to cute pictures',
-      action: 'post_redirect',
+      label: 'Who Voted Me Out?',
     },
   ],
   image: `${NEXT_PUBLIC_URL}/park-1.png`,
   input: {
-    text: 'Tell me a boat story',
+    text: 'Enter Your Twitter Handle',
   },
   post_url: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
+  title: 'CTG-Backstabbers',
+  description: 'CTG',
   openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    title: 'ctg-backstabbers',
+    description: 'CTG',
+    images: [`${NEXT_PUBLIC_URL}/eliminated.png`],
   },
   other: {
     ...frameMetadata,
@@ -40,7 +31,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>ctg-backstabber</h1>
     </>
   );
 }
